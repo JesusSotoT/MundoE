@@ -1,24 +1,25 @@
 [
     {
         "name": "acacha/admin-lte-template-laravel",
-        "version": "4.0.7",
-        "version_normalized": "4.0.7.0",
+        "version": "4.1.9",
+        "version_normalized": "4.1.9.0",
         "source": {
             "type": "git",
             "url": "https://github.com/acacha/adminlte-laravel.git",
-            "reference": "e68e1b4b56d72dd1b33471e26daed8597cd7fd4b"
+            "reference": "dd9cb9b0130cc0f33bd55d54b47717ef371ed78e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/e68e1b4b56d72dd1b33471e26daed8597cd7fd4b",
-            "reference": "e68e1b4b56d72dd1b33471e26daed8597cd7fd4b",
+            "url": "https://api.github.com/repos/acacha/adminlte-laravel/zipball/dd9cb9b0130cc0f33bd55d54b47717ef371ed78e",
+            "reference": "dd9cb9b0130cc0f33bd55d54b47717ef371ed78e",
             "shasum": ""
         },
         "require": {
+            "acacha/filesystem": "^0.1.0",
             "acacha/helpers": "^0.1.3",
             "acacha/user": "~0.2",
             "creativeorange/gravatar": "~1.0",
-            "laravel/browser-kit-testing": "^1.0",
+            "laravel/browser-kit-testing": "^1.0.2",
             "laravel/framework": "^5.4",
             "league/flysystem": "^1.0",
             "php": "~5.6|~7.0"
@@ -27,7 +28,7 @@
             "phpunit/phpunit": "~4.0||~5.0",
             "squizlabs/php_codesniffer": "^2.3"
         },
-        "time": "2017-01-28T12:09:43+00:00",
+        "time": "2017-04-06T14:28:21+00:00",
         "type": "package",
         "extra": {
             "branch-alias": {
@@ -63,6 +64,60 @@
             "laravel",
             "template",
             "theme"
+        ]
+    },
+    {
+        "name": "acacha/filesystem",
+        "version": "0.1.2",
+        "version_normalized": "0.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/acacha/filesystem.git",
+            "reference": "4746999a5205c2c2e9efa1c0ed4242d845d8d28e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/acacha/filesystem/zipball/4746999a5205c2c2e9efa1c0ed4242d845d8d28e",
+            "reference": "4746999a5205c2c2e9efa1c0ed4242d845d8d28e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "~5.6|~7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0||~5.0",
+            "squizlabs/php_codesniffer": "^2.3"
+        },
+        "time": "2017-08-31T14:32:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Acacha\\Filesystem\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Sergi Tur Badenas",
+                "email": "sergiturbadenas@gmail.com",
+                "homepage": "https://github.com/acacha",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP filesystem with stubs compiler support",
+        "homepage": "https://github.com/acacha/filesystem",
+        "keywords": [
+            "acacha",
+            "filesystem"
         ]
     },
     {
@@ -825,6 +880,60 @@
         ]
     },
     {
+        "name": "greggilbert/recaptcha",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/greggilbert/recaptcha.git",
+            "reference": "c2ed383785a4fe20467ce470c97c303e5c5b85de"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/greggilbert/recaptcha/zipball/c2ed383785a4fe20467ce470c97c303e5c5b85de",
+            "reference": "c2ed383785a4fe20467ce470c97c303e5c5b85de",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~5.1",
+            "php": ">=5.3.0"
+        },
+        "time": "2017-08-31T03:39:47+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/migrations"
+            ],
+            "psr-4": {
+                "Greggilbert\\Recaptcha\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Gilbert",
+                "email": "greg@greg-gilbert.com"
+            }
+        ],
+        "description": "reCAPTCHA Validator for Laravel 5",
+        "homepage": "http://github.com/greggilbert/recaptcha",
+        "keywords": [
+            "captcha",
+            "laravel",
+            "laravel5",
+            "recaptcha"
+        ]
+    },
+    {
         "name": "hamcrest/hamcrest-php",
         "version": "v2.0.0",
         "version_normalized": "2.0.0.0",
@@ -967,23 +1076,25 @@
     },
     {
         "name": "laravel/browser-kit-testing",
-        "version": "v1.0.1",
-        "version_normalized": "1.0.1.0",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/browser-kit-testing.git",
-            "reference": "442a9de17b5acc1a140c322f67ea4ee0f1c42688"
+            "reference": "0adfb725147815bff5516d157577f375a6e66ebd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/browser-kit-testing/zipball/442a9de17b5acc1a140c322f67ea4ee0f1c42688",
-            "reference": "442a9de17b5acc1a140c322f67ea4ee0f1c42688",
+            "url": "https://api.github.com/repos/laravel/browser-kit-testing/zipball/0adfb725147815bff5516d157577f375a6e66ebd",
+            "reference": "0adfb725147815bff5516d157577f375a6e66ebd",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.5.9"
+            "php": ">=5.5.9",
+            "symfony/css-selector": "~3.1",
+            "symfony/dom-crawler": "~3.1"
         },
-        "time": "2017-01-24T13:11:16+00:00",
+        "time": "2017-02-08T22:32:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1155,17 +1266,17 @@
     },
     {
         "name": "laravel/tinker",
-        "version": "v1.0.6",
-        "version_normalized": "1.0.6.0",
+        "version": "v1.0.7",
+        "version_normalized": "1.0.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/tinker.git",
-            "reference": "b22fe905fcefdffae76b011e27c7ac09e07e052b"
+            "reference": "e3086ee8cb1f54a39ae8dcb72d1c37d10128997d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/tinker/zipball/b22fe905fcefdffae76b011e27c7ac09e07e052b",
-            "reference": "b22fe905fcefdffae76b011e27c7ac09e07e052b",
+            "url": "https://api.github.com/repos/laravel/tinker/zipball/e3086ee8cb1f54a39ae8dcb72d1c37d10128997d",
+            "reference": "e3086ee8cb1f54a39ae8dcb72d1c37d10128997d",
             "shasum": ""
         },
         "require": {
@@ -1182,7 +1293,7 @@
         "suggest": {
             "illuminate/database": "The Illuminate Database package (~5.1)."
         },
-        "time": "2018-04-16T12:10:37+00:00",
+        "time": "2018-05-17T13:42:07+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3469,27 +3580,27 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v4.0.9",
-        "version_normalized": "4.0.9.0",
+        "version": "v3.4.9",
+        "version_normalized": "3.4.9.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
-            "reference": "03f965583147957f1ecbad7ea1c9d6fd5e525ec2"
+            "reference": "519a80d7c1d95c6cc0b67f686d15fe27c6910de0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/03f965583147957f1ecbad7ea1c9d6fd5e525ec2",
-            "reference": "03f965583147957f1ecbad7ea1c9d6fd5e525ec2",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/519a80d7c1d95c6cc0b67f686d15fe27c6910de0",
+            "reference": "519a80d7c1d95c6cc0b67f686d15fe27c6910de0",
             "shasum": ""
         },
         "require": {
-            "php": "^7.1.3"
+            "php": "^5.5.9|>=7.0.8"
         },
-        "time": "2018-03-19T22:35:49+00:00",
+        "time": "2018-03-19T22:32:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.0-dev"
+                "dev-master": "3.4-dev"
             }
         },
         "installation-source": "dist",
@@ -3578,6 +3689,64 @@
             }
         ],
         "description": "Symfony Debug Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/dom-crawler",
+        "version": "v3.4.9",
+        "version_normalized": "3.4.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/dom-crawler.git",
+            "reference": "1a4cffeb059226ff6bee9f48acb388faf674afff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/1a4cffeb059226ff6bee9f48acb388faf674afff",
+            "reference": "1a4cffeb059226ff6bee9f48acb388faf674afff",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "require-dev": {
+            "symfony/css-selector": "~2.8|~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/css-selector": ""
+        },
+        "time": "2018-03-19T22:32:39+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\DomCrawler\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony DomCrawler Component",
         "homepage": "https://symfony.com"
     },
     {

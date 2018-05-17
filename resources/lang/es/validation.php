@@ -100,6 +100,7 @@ return [
     'required_without' => 'El campo :attribute es obligatorio cuando :values no está presente.',
     'required_without_all' => 'El campo :attribute es obligatorio cuando ninguno de :values estén presentes.',
     'same' => ':attribute y :other deben coincidir.',
+    'recaptcha' => 'El recaptcha es obligatorio',
     'size' => [
         'numeric' => 'El tamaño de :attribute debe ser :size.',
         'file' => 'El tamaño de :attribute debe ser :size kilobytes.',

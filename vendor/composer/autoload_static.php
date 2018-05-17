@@ -50,6 +50,7 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
@@ -84,6 +85,10 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         array (
             'Illuminate\\' => 11,
         ),
+        'G' => 
+        array (
+            'Greggilbert\\Recaptcha\\' => 22,
+        ),
         'F' => 
         array (
             'Fideloper\\Proxy\\' => 16,
@@ -111,6 +116,7 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
             'App\\' => 4,
             'Acacha\\User\\' => 12,
             'Acacha\\Helpers\\' => 15,
+            'Acacha\\Filesystem\\' => 18,
             'Acacha\\AdminLTETemplateLaravel\\' => 31,
         ),
     );
@@ -182,6 +188,10 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
+        'Symfony\\Component\\DomCrawler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
+        ),
         'Symfony\\Component\\Debug\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
@@ -242,6 +252,10 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
         ),
+        'Greggilbert\\Recaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/greggilbert/recaptcha/src',
+        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -294,6 +308,10 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         array (
             0 => __DIR__ . '/..' . '/acacha/helpers/src',
         ),
+        'Acacha\\Filesystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/acacha/filesystem/src',
+        ),
         'Acacha\\AdminLTETemplateLaravel\\' => 
         array (
             0 => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src',
@@ -341,7 +359,6 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
 
     public static $classMap = array (
         'Acacha\\AdminLTETemplateLaravel\\AdminLTE' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/AdminLTE.php',
-        'Acacha\\AdminLTETemplateLaravel\\Compiler\\StubFileCompiler' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Compiler/StubFileCompiler.php',
         'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEAdmin' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEAdmin.php',
         'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEAdminAlt' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEAdminAlt.php',
         'Acacha\\AdminLTETemplateLaravel\\Console\\AdminLTEMenu' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/AdminLTEMenu.php',
@@ -369,15 +386,16 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\GeneratesCode' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/GeneratesCode.php',
         'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\RegularRoute' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/RegularRoute.php',
         'Acacha\\AdminLTETemplateLaravel\\Console\\Routes\\Route' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Routes/Route.php',
+        'Acacha\\AdminLTETemplateLaravel\\Console\\Username' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Console/Username.php',
         'Acacha\\AdminLTETemplateLaravel\\Exceptions\\RouteTypeNotValid' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/RouteTypeNotValid.php',
         'Acacha\\AdminLTETemplateLaravel\\Exceptions\\SpatieMenuAlreadyExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/SpatieMenuAlreadyExists.php',
         'Acacha\\AdminLTETemplateLaravel\\Exceptions\\SpatieMenuDoesNotExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/SpatieMenuDoesNotExists.php',
         'Acacha\\AdminLTETemplateLaravel\\Facades\\AdminLTE' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Facades/AdminLTE.php',
-        'Acacha\\AdminLTETemplateLaravel\\Filesystem\\FileAlreadyExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Filesystem/FileAlreadyExists.php',
-        'Acacha\\AdminLTETemplateLaravel\\Filesystem\\FileDoesNotExists' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Filesystem/FileDoesNotExists.php',
-        'Acacha\\AdminLTETemplateLaravel\\Filesystem\\Filesystem' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Filesystem/Filesystem.php',
         'Acacha\\AdminLTETemplateLaravel\\Providers\\AdminLTETemplateServiceProvider' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Providers/AdminLTETemplateServiceProvider.php',
-        'Acacha\\AdminLTETemplateLaravel\\app\\Exceptions\\Handler' => __DIR__ . '/..' . '/acacha/admin-lte-template-laravel/src/Exceptions/Handler.php',
+        'Acacha\\Filesystem\\Compiler\\StubFileCompiler' => __DIR__ . '/..' . '/acacha/filesystem/src/Compiler/StubFileCompiler.php',
+        'Acacha\\Filesystem\\FileAlreadyExists' => __DIR__ . '/..' . '/acacha/filesystem/src/FileAlreadyExists.php',
+        'Acacha\\Filesystem\\FileDoesNotExists' => __DIR__ . '/..' . '/acacha/filesystem/src/FileDoesNotExists.php',
+        'Acacha\\Filesystem\\Filesystem' => __DIR__ . '/..' . '/acacha/filesystem/src/Filesystem.php',
         'Acacha\\Helpers\\Console\\Commands\\PackableGeneratorCommand' => __DIR__ . '/..' . '/acacha/helpers/src/Console/Commands/PackableGeneratorCommand.php',
         'Acacha\\Helpers\\Console\\Commands\\RequestMakeCommand' => __DIR__ . '/..' . '/acacha/helpers/src/Console/Commands/RequestMakeCommand.php',
         'Acacha\\User\\GuestUser' => __DIR__ . '/..' . '/acacha/user/src/GuestUser.php',
@@ -952,6 +970,12 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'Greggilbert\\Recaptcha\\Facades\\Recaptcha' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Facades/Recaptcha.php',
+        'Greggilbert\\Recaptcha\\Recaptcha' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Recaptcha.php',
+        'Greggilbert\\Recaptcha\\RecaptchaServiceProvider' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/RecaptchaServiceProvider.php',
+        'Greggilbert\\Recaptcha\\Service\\CheckRecaptcha' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Service/CheckRecaptcha.php',
+        'Greggilbert\\Recaptcha\\Service\\CheckRecaptchaV2' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Service/CheckRecaptchaV2.php',
+        'Greggilbert\\Recaptcha\\Service\\RecaptchaInterface' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Service/RecaptchaInterface.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1827,12 +1851,8 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         'Laravel\\BrowserKitTesting\\Constraints\\IsSelected' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/IsSelected.php',
         'Laravel\\BrowserKitTesting\\Constraints\\PageConstraint' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/PageConstraint.php',
         'Laravel\\BrowserKitTesting\\Constraints\\ReversePageConstraint' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Constraints/ReversePageConstraint.php',
-        'Laravel\\BrowserKitTesting\\DatabaseMigrations' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/DatabaseMigrations.php',
-        'Laravel\\BrowserKitTesting\\DatabaseTransactions' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/DatabaseTransactions.php',
         'Laravel\\BrowserKitTesting\\HttpException' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/HttpException.php',
         'Laravel\\BrowserKitTesting\\TestCase' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/TestCase.php',
-        'Laravel\\BrowserKitTesting\\WithoutEvents' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/WithoutEvents.php',
-        'Laravel\\BrowserKitTesting\\WithoutMiddleware' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/WithoutMiddleware.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -3225,6 +3245,17 @@ class ComposerStaticInitce97ce54c4eca12a963cc3733267ec8c
         'Symfony\\Component\\Debug\\FatalErrorHandler\\FatalErrorHandlerInterface' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedFunctionFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedFunctionFatalErrorHandler.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedMethodFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedMethodFatalErrorHandler.php',
+        'Symfony\\Component\\DomCrawler\\AbstractUriElement' => __DIR__ . '/..' . '/symfony/dom-crawler/AbstractUriElement.php',
+        'Symfony\\Component\\DomCrawler\\Crawler' => __DIR__ . '/..' . '/symfony/dom-crawler/Crawler.php',
+        'Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/ChoiceFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FileFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FileFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\InputFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/InputFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\TextareaFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/TextareaFormField.php',
+        'Symfony\\Component\\DomCrawler\\Form' => __DIR__ . '/..' . '/symfony/dom-crawler/Form.php',
+        'Symfony\\Component\\DomCrawler\\FormFieldRegistry' => __DIR__ . '/..' . '/symfony/dom-crawler/FormFieldRegistry.php',
+        'Symfony\\Component\\DomCrawler\\Image' => __DIR__ . '/..' . '/symfony/dom-crawler/Image.php',
+        'Symfony\\Component\\DomCrawler\\Link' => __DIR__ . '/..' . '/symfony/dom-crawler/Link.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/WrappedListener.php',
