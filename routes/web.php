@@ -20,6 +20,12 @@ Route::group(['middleware' => 'auth'], function () {
 //        // Uses Auth Middleware
 //    });
 
+//roles 
+	Route::post('roles/store')->name('roles.store')
+		->middleware('permission:roles.create');
+
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
 });
+
+//Routes

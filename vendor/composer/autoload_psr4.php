@@ -48,6 +48,7 @@ return array(
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
     'Creativeorange\\Gravatar\\' => array($vendorDir . '/creativeorange/gravatar/src'),
+    'Collective\\Html\\' => array($vendorDir . '/laravelcollective/html/src'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'Caffeinated\\Shinobi\\' => array($vendorDir . '/caffeinated/shinobi/src'),
     'App\\' => array($baseDir . '/app'),
