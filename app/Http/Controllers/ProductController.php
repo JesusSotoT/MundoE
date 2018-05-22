@@ -27,7 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -38,7 +38,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = Product::create($request->all());
+
+        return redirect()->route('products.edit', $product->id)
+                ->with('info', 'El Beacon ha sido Grabado con exito');
+
     }
 
     /**
@@ -49,7 +53,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('adminlte::products.show', compact('product'));
     }
 
     /**
@@ -60,7 +64,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('adminlte::products.edit', compact('product'));
     }
 
     /**
@@ -72,7 +76,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $product->update($request->all());
+
+         return redirect()->route('products.edit', $product->id)
+                ->with('info', 'El Beacon ha sido Actualizado con exito');
     }
 
     /**
@@ -83,6 +90,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+
+        return back()->with('info', 'El Beacon ha sido eliminado correctamente');
     }
 }

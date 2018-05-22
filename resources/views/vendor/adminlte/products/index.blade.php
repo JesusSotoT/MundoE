@@ -23,29 +23,62 @@
 							<thead>
 								<tr>
 									<th width="10px">ID</th>
-									<th>Nombre</th>
-									<th colspan="3">&nbsp;</th>
+									<th>Nombre De Identificacion</th>
+									<th>ID de Fabrica</th>
+									<th>UUID</th>
+									<th colspan="">Acciones</th>
 								</tr>
 							</thead>
 								<tbody>
 								@foreach($products as $product)
 								<tr>
 									<td>{{ $product->id }}</td>
-									<td>{{ $product->name }}</td>
+
+									<td>{{ $product->description}}</td>
+
+									<td>{{ $product->ID_factory }}</td>
+
+									<td>{{ $product->uudid }}</td>
+
+
 									<td>
 
 									@can('products.show')
 
-									<a href="{{ route('products.show', $product->id) }}" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-eye-open"></i> Ver</a>
+									<a href="{{ route('products.show', $product->id) }}" class="btn btn-sm btn-info">
+										       <i class="glyphicon glyphicon-eye-open"></i> Ver</a>
 
 									@endcan
+								
 
+								
+									
+									@can('products.edit')
+									<a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm btn-warning">
+										       <i class="glyphicon glyphicon-pencil"></i> Editar</a>
+									@endcan
+
+							
+										@can('products.destroy')
+										{!! Form::open(['route' => ['products.destroy', $product->id],
+										'method' => 'DELETE']) !!}
+
+										<button class="btn btn-sm btn-danger">
+											<i class="glyphicon glyphicon-remove"></i>
+											Eliminar
+										</button>
+
+										{!! Form::close() !!}
+										@endcan
 									</td>
+
+
+
 								</tr>
 								@endforeach
 							</tbody>
 						</table>
-						
+						{{ $products->render() }}
 					</div>
 				</div>
 			
