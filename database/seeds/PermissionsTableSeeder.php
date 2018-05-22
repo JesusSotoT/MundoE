@@ -102,7 +102,7 @@ class PermissionsTableSeeder extends Seeder
          Permission::create([
 
         	'name'  	   => 'Navegar beacons',
-        	'slug'  	   => 'beacons.index',
+        	'slug'  	   => 'products.index',
         	'description'  => 'Lista y navega todos los beacons sistema',
 
         ]);
@@ -111,7 +111,7 @@ class PermissionsTableSeeder extends Seeder
 
         	//Users
         	'name'  	   => 'Crear detalle beacons',
-        	'slug'  	   => 'beacons.create',
+        	'slug'  	   => 'products.create',
         	'description'  => 'Crear Roles del sistema',
 
         ]);
@@ -119,7 +119,7 @@ class PermissionsTableSeeder extends Seeder
         Permission::create([
 
         	'name'  	   => 'Ver detalle beacons',
-        	'slug'  	   => 'beacons.show',
+        	'slug'  	   => 'products.show',
         	'description'  => 'Ver en detalle cada beacons del sistema',
 
         ]);
@@ -127,7 +127,7 @@ class PermissionsTableSeeder extends Seeder
         Permission::create([
 
         	'name'  	   => 'Edicion de beacons',
-        	'slug'  	   => 'beacons.edit',
+        	'slug'  	   => 'products.edit',
         	'description'  => 'Editar cualquier dato de los beacons del sistema',
 
         ]);
@@ -136,7 +136,7 @@ class PermissionsTableSeeder extends Seeder
 
         	//Users
         	'name'  	   => 'Eliminar beacons',
-        	'slug'  	   => 'beacons.destroy',
+        	'slug'  	   => 'products.destroy',
         	'description'  => 'Eliminar beacons del sistema',
 
         ]);

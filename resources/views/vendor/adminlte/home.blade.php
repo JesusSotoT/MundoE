@@ -8,15 +8,41 @@
 @section('main-content')
 	<div class="container-fluid spark-screen">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			
 				<div class="panel panel-default">
-					<div class="panel-heading">Bienvenido {{ Auth::user()->name }} !</div>
 
+					 <div class="panel panel-heading">Bienvenido {{ Auth::user()->name }} !     
+					 	<ul class="nav">
+
+					 		@can('products.index')
+					 	<li class="nav-item">
+
+					 		<a class="nav-link" href="{{ route('products.index') }}">Productos</a>
+
+					 
+					 		@endcan
+
+					 		@can('users.index')
+						 
+
+					 		<a class="nav-link" href="{{ route('users.index') }}">Usuarios</a>
+
+					
+					 	@endcan
+
+					 	@can('roles.index')
+	
+					 		<a  class="nav-link"href="{{ route('roles.index') }}">Roles</a>
+					 	</li>
+					 	@endcan
+					 </ul>
+					 </div>
+					
 					<div class="panel-body">
-						{{ trans('adminlte_lang::message.logged') }}
+						
 					</div>
 				</div>
-			</div>
+			
 		</div>
 	</div>
 @endsection
