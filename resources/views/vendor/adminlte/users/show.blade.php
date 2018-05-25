@@ -9,24 +9,18 @@
 	<div class="container-fluid spark-screen">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<div class="panel panel-info">
-					<div class="panel-heading">Informacion de Beacon</div>
+				<div class="panel panel-success">
+					<div class="panel-heading">Usuario</div>
 
 
 					<div class="panel-body">
 
-					{!! Form::model($product, ['route' => ['products.update', $product->id],
-					'method' => 'PUT']) !!}
-
-						@include('adminlte::products.partials.form')
-
-
-
-					{!! Form::close() !!}
+						<p><strong>Nombre: </strong> {{ $user->name}}</p>
+						<p><strong>E-mail: </strong> {{ $user->email}}</p>
+						<p><strong>Fecha de Registro : </strong> {{ $user->created_at}}</p>
 						
 
 					</div>
-			
 					
 				</div>
 			</div>

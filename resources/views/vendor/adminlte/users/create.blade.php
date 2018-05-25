@@ -15,32 +15,22 @@
 
 					<div class="panel-body">
 
-					{!! Form::open(['route' => 'products.store']) !!}
+					{!! Form::open(['route' => 'users.store']) !!}
 
-	<div class="form-group">
-	{{ Form::label('description', 'Nombre del Beacon:') }}
-	{{ Form::text('description', null, ['class' => 'form-control']) }}
+						<div class="form-group">
+	{{ Form::label('name', 'Nombre de Usuario:') }}
+	{{ Form::text('name', null, ['class' => 'form-control']) }}
 </div>
 <div class="form-group">
 	
-	{{ Form::label('ID_factory', 'Id de Fabrica del Beacon:') }}
-	{{ Form::text('ID_factory', null, ['class' => 'form-control']) }}
+	{{ Form::label('email', 'Email:') }}
+	{{ Form::text('email', null, ['class' => 'form-control']) }}
 </div>
 <div class="form-group">
-	
-	{{ Form::label('s/n', 'Numero de Serie:') }}
-	{{ Form::text('s/n', null, ['class' => 'form-control']) }}
-</div>
-<div class="form-group">
-	
-	{{ Form::label('FCC_ID', 'FCC_ID:') }}
-	{{ Form::text('FCC_ID', null, ['class' => 'form-control']) }}
-</div>
 	
 	
 	{{ Form::submit('Guardar', null, ['class' => 'btn btn-sm btn-primary']) }}
 </div>
-
 					{!! Form::close() !!}
 						
 

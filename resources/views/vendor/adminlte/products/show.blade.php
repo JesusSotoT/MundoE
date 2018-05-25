@@ -18,7 +18,9 @@
 						<p><strong>Nombre: </strong> {{ $product->description}}</p>
 						<p><strong>ID de fabrica: </strong> {{ $product->ID_factory}}</p>
 						<p><strong>UUID: </strong> {{ $product->uudid}}</p>
-						<p><strong>FCC_ID</strong> {{ $product->FCC_ID}}</p>
+						<p><strong>FCC_ID:</strong> {{ $product->FCC_ID}}</p>
+						<p><strong>Fecha de Registro : </strong> {{ $product->created_at}}</p>
+						
 
 					</div>
 					

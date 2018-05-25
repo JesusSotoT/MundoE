@@ -27,7 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        return view('adminlte::products.create');
     }
 
     /**
@@ -38,10 +38,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = Product::create($request->all());
+        $product = Product::create($request->all() );
+
 
         return redirect()->route('products.edit', $product->id)
                 ->with('info', 'El Beacon ha sido Grabado con exito');
+                
 
     }
 

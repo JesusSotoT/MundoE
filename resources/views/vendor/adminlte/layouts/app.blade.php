@@ -40,13 +40,23 @@ desired effect
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
 
-        @include('adminlte::layouts.partials.contentheader')
-
         <!-- Main content -->
         <section class="content">
             <!-- Your Page Content Here -->
+         @include('adminlte::layouts.partials.contentheader')
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="alert alert-success" hidden="true">
+                            {{ session('info') }}
+
+                    </div>
+                </div>
+            </div>
+        </div>
             @yield('main-content')
         </section><!-- /.content -->
+        
     </div><!-- /.content-wrapper -->
 
     @include('adminlte::layouts.partials.controlsidebar')

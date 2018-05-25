@@ -9,6 +9,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Product;
 
 /**
  * Class HomeController
@@ -32,7 +33,11 @@ class HomeController extends Controller
      * @return Response
      */
     public function index()
+
     {
-        return view('adminlte::home');
+          $products = Product::paginate($perPage = 3);
+
+        
+        return view('adminlte::home', compact('products'));
     }
 }
